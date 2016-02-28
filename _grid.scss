@@ -1,0 +1,23 @@
+
+.col- {
+	display: inline-block;
+	vertical-align: top;
+	margin: 2%;
+
+	&1 {
+		width: 96%;
+	}
+	&2 {
+		width: 45.3%;
+	}
+	&3 {
+		width: 28%;
+	}
+}
+
+
+div[class^="col-"] input,
+div[class^="col-"] select,
+div[class^="col-"] textarea {
+	width: 100%;
+}
