@@ -1,23 +1,32 @@
+/* GRID */
 
-.col- {
-	display: inline-block;
-	vertical-align: top;
-	margin: 2%;
-
-	&1 {
-		width: 96%;
+.grid {
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	
+	div[class^="col-"] {
+		margin-bottom:2%;
 	}
-	&2 {
-		width: 45.3%;
-	}
-	&3 {
-		width: 28%;
-	}
-}
 
-
-div[class^="col-"] input,
-div[class^="col-"] select,
-div[class^="col-"] textarea {
-	width: 100%;
+	.col-1 {
+		flex-basis: 100%;
+		width: 100%;
+	}
+	.col-2 {
+		flex-basis: 48%;
+		width: 48%;
+	}
+	.col-3 {
+		flex-basis: 31%;
+		width: 31%;
+	}
+	.col-4 {
+		flex-basis: 23%;
+		width: 23%;
+	}
+	.col-5 {
+		flex-basis: 18%;
+		width: 18%;
+	}
 }

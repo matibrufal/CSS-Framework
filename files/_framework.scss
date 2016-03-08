@@ -1,0 +1,54 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+iframe,
+embed {
+	max-width: 100%;
+}
+
+.responsive {
+	padding-right:320px;
+}
+.responsive .sidebar {
+	margin-right: -320px;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.alignleft { 
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+}
+
+.hidden {
+	display: none;
+}
