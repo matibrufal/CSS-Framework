@@ -7,6 +7,9 @@
 	
 	div[class^="col-"] {
 		margin-bottom:2%;
+		@media (max-width: 600px) {
+			margin-bottom: 6%;
+		}
 	}
 
 	.col-1 {
@@ -16,17 +19,59 @@
 	.col-2 {
 		flex-basis: 48%;
 		width: 48%;
+		@media (max-width: 480px) {
+			flex-basis: 100%;
+			width: 100%;
+		}
 	}
 	.col-3 {
 		flex-basis: 31%;
 		width: 31%;
+		@media (max-width: 600px) {
+			flex-basis: 48%;
+			width: 48%;
+		}
+		@media (max-width: 320px) {
+			flex-basis: 100%;
+			width: 100%;
+		}
 	}
 	.col-4 {
 		flex-basis: 23%;
 		width: 23%;
+
+		@media (max-width: 780px) {
+			flex-basis: 48%;
+			width: 48%;
+		}
+		@media (max-width: 480px) {
+			flex-basis: 100%;
+			width: 100%;
+		}
 	}
 	.col-5 {
 		flex-basis: 18%;
 		width: 18%;
+		@media (max-width: 600px) {
+			flex-basis: 48%;
+			width: 48%;
+		}
+		@media (max-width: 320px) {
+			flex-basis: 100%;
+			width: 100%;
+		}
+	}
+	.col-6 {
+		flex-basis: 14%;
+		width: 14%;
+
+		@media (max-width: 780px) {
+			flex-basis: 48%;
+			width: 48%;
+		}
+		@media (max-width: 480px) {
+			flex-basis: 100%;
+			width: 100%;
+		}
 	}
 }

@@ -23,12 +23,71 @@
 	<h1>Simple Framework CSS</h1>
 
 	<section class="grid">
+		<h2>Tipografia</h2>
+
+		<h1 class="col-1">Texto en h1</h1>
+		<h2 class="col-1">Texto en h2</h2>
+		<h3 class="col-1">Texto en h3</h3>
+		<h4 class="col-1">Texto en h4</h4>
+		<h5 class="col-1">Texto en h5</h5>
+		<h6 class="col-1">Texto en h6</h6>
+	</section>
+
+	<section class="grid">
 		<h2>Botones</h2>
 
 		<div class="col-1">
-			<a href="#" class="btn">btn</a>
-			<a href="#" class="btn btn-submit">btn-submit</a>
+			<a href="#" class="btn">.btn</a>
+			<a href="#" class="btn btn-primary">.btn-primary</a>
+			<a href="#" class="btn btn-submit">.btn-submit</a>
+			<a href="#" class="btn btn-success">.btn-success</a>
+			<a href="#" class="btn btn-warning">.btn-warning</a>
+			<a href="#" class="btn btn-danger">.btn-danger</a>
 		</div>
+
+		<div class="col-1">
+			<a href="#" class="btn hollow">.btn.hollow</a>
+			<a href="#" class="btn btn-primary hollow">.btn-primary.hollow</a>
+			<a href="#" class="btn btn-submit hollow">.btn-submit.hollow</a>
+			<a href="#" class="btn btn-success hollow">.btn-success.hollow</a>
+			<a href="#" class="btn btn-warning hollow">.btn-warning.hollow</a>
+			<a href="#" class="btn btn-danger hollow">.btn-danger.hollow</a>
+		</div>
+	</section>
+
+	<section>
+		<h2>Tables</h2>
+
+		<table>
+			<thead>
+				<tr>
+					<th width="200">Table Header</th>
+					<th>Table Header</th>
+					<th width="150">Table Header</th>
+					<th width="150">Table Header</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Content Goes Here</td>
+					<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+					<td>Content Goes Here</td>
+					<td>Content Goes Here</td>
+				</tr>
+				<tr>
+					<td>Content Goes Here</td>
+					<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+					<td>Content Goes Here</td>
+					<td>Content Goes Here</td>
+				</tr>
+				<tr>
+					<td>Content Goes Here</td>
+					<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+					<td>Content Goes Here</td>
+					<td>Content Goes Here</td>
+				</tr>
+			</tbody>
+		</table>
 	</section>
 
 	<section>
@@ -36,46 +95,47 @@
 
 		<form action="#" class="grid inline">
 
-			<div class="col-1">
-				<legend>Legend</legend>
-			</div>
-
-			<div class="col-3">
+			<div class="col-3 inline">
 				<label for="#">Label</label>
 				<input type="text" placeholder="Input normal">
 			</div>
 
-			<div class="col-3 input-helper">
-				<span>$</span>
-				<input type="text" placeholder="Input">
+			<div class="col-3">
+				<div class="input-helper">
+					<span>$</span>
+					<input type="number" placeholder="0,00">					
+				</div>
+				<p>
+					texto de ayuda
+				</p>
 			</div>
 
 			<div class="col-3">
-				<label for="#">Label</label>
-				<input type="text" placeholder="Input Disabled" class="success">
-				<p class="text-helper">Este input se encuentra deshabilitado</p>
+				<input type="text" placeholder="Input Disabled" class="warning" disabled>
+				<p class="text-alert">Este input se encuentra deshabilitado</p>
 			</div>
 
-			<div class="col-1">
-				<input type="file">
+
+			<div class="col-1 inline">
+				<fieldset>				
+					<legend>Legend</legend>
+
+					<label for="Checkbox">
+						<input type="checkbox" name="checkbox" id="Checkbox">
+						Checkbox
+					</label>
+					<label for="Checkbox2">
+						<input type="checkbox" name="checkbox" id="Checkbox2">
+						Checkbox
+					</label>
+					<label for="Checkbox3">
+						<input type="checkbox" name="checkbox" id="Checkbox3" disabled>
+						Checkbox
+					</label>
+				</fieldset>
 			</div>
 
 			<div class="col-1 inline">
-				<label for="Checkbox">
-					<input type="checkbox" name="checkbox" id="Checkbox">
-					Checkbox
-				</label>
-				<label for="Checkbox2">
-					<input type="checkbox" name="checkbox" id="Checkbox2">
-					Checkbox
-				</label>
-				<label for="Checkbox3">
-					<input type="checkbox" name="checkbox" id="Checkbox3" disabled>
-					Checkbox
-				</label>
-			</div>
-
-			<div class="col-1">
 				<label for="Radio">
 					<input type="radio" name="radio" id="Radio">
 					Radio
@@ -91,17 +151,26 @@
 			</div>
 
 			<div class="col-1">
+				<input type="file">
+			</div>
+
+			<div class="col-1">
 				<select name="" id="">
-					<option value="opcion 1">opcion 1</option>
-					<option value="opcion 2">opcion 2</option>
-					<option value="opcion 3">opcion 3</option>
-					<option value="opcion 4">opcion 4</option>
-					<option value="opcion 5">opcion 5</option>
+					<option value="opcion 1">Opción 1</option>
+					<option value="opcion 2">Opción 2</option>
+					<option value="opcion 3">Opción 3</option>
+					<option value="opcion 4">Opción 4</option>
+					<option value="opcion 5">Opción 5</option>
 				</select>
 			</div>
 
 			<div class="col-1">
-				<textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vitae obcaecati eius adipisci, vero dicta similique provident, tempora qui dolores reiciendis earum tempore, unde, officia explicabo quas exercitationem expedita consectetur.</textarea>
+				<textarea rows="5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vitae obcaecati eius adipisci, vero dicta similique provident, tempora qui dolores reiciendis earum tempore, unde, officia explicabo quas exercitationem expedita consectetur.</textarea>
+			</div>
+
+			<div class="col-1">
+				<input type="submit" value="Enviar">
+				<input type="submit" value="Btn Enviar" class="btn btn-submit">
 			</div>
 
 		</form>
@@ -113,7 +182,7 @@
 
 		<div class="grid">
 			<div class="col-1">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dicta ratione unde, exercitationem amet accusamus voluptates repudiandae maiores fuga error beatae suscipit, dolore est eum nihil obcaecati modi qui recusandae?</p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dicta ratione unde, exercitationem amet accusamus voluptates repudiandae maiores fuga error beatae suscipit, dolore est eum nihil obcaecati modi qui recusandae?
 			</div>
 
 			<div class="col-2">

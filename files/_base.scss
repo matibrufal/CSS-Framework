@@ -17,9 +17,31 @@ embed {
 
 .responsive {
 	padding-right:320px;
+	@media (max-width:780px) {
+		padding-right:0;
+	}
 }
 .responsive .sidebar {
+	width:300px;
 	margin-right: -320px;
+	@media (max-width:780px) {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+.responsive-left {
+	padding-left:320px;
+	@media (max-width:780px) {
+		padding-right:0;
+	}
+}
+.responsive-left .sidebar {
+	width:300px;
+	margin-left: -320px;
+	@media (max-width:780px) {
+		width: 100%;
+		margin-right: 0;
+	}
 }
 
 .full-width {
