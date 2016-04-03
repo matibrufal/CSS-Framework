@@ -1,16 +1,18 @@
-/* FORMS */
+/* Forms */
 
 form {
 
 	.inline {
+		display: table;
+
 		label {
-			display: inline-block;
+			display: table-cell;
 			vertical-align: middle;
 		}
 		input,
 		select,
 		textarea {
-			display: inline-block;
+			display: table-cell;
 			width: auto;
 		}
 	}
@@ -25,7 +27,7 @@ form {
 		display: block;
 		width: 100%;
 		padding-bottom: 0.5em;
-		margin-bottom: 1em;
+		margin: 0.5em 0;
 		font-size: 120%;
 		border-bottom: 1px solid $gray;
 	}
@@ -43,13 +45,13 @@ form {
 		width: 100%;
 		padding: 0.5em;
 		height: 35px;
+		color: #333;
 		background: #fff;
 		border:1px solid $gray;
 		border-radius: $border-radius;
 		box-shadow: inset 0 2px 0 rgba(0,0,0,0.05);
 
 		&:focus {
-			background:#f8f8f8;
 			outline: 0;
 		}
 
@@ -157,7 +159,12 @@ form {
 		}
 	}
 
-	// Text Helper
+	.text-helper {
+		color: #555;
+		font-size: 90%;
+	}
+
+	// Text Alert
 
 	.text-alert {
 		position:relative;

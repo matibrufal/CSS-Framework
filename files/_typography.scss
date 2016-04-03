@@ -2,8 +2,9 @@
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.5em;
 }
+
 h1 { font-size:180%; }
 h2 { font-size:160%; }
 h3 { font-size:140%; }
@@ -24,6 +25,7 @@ a {
 }
 
 hr {
+	margin:1em 0;
 	border:0;
 	border-bottom:1px solid $gray;
 }

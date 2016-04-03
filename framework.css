@@ -2,10 +2,6 @@
 	@MatiBrufal =D
 	@ Version 1.0
 */
-body { color: #353535; font-size: 16px; line-height: 1.5; }
-
-section { margin-bottom: 2.5px; overflow: hidden; padding: 0.5em; border-bottom: 1px solid #ccc; }
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /** 1. Set default font family to sans-serif. 2. Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom. */
 html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
@@ -138,18 +134,6 @@ td, th { padding: 0; }
 
 iframe, embed { max-width: 100%; }
 
-.responsive { padding-right: 320px; }
-@media (max-width: 780px) { .responsive { padding-right: 0; } }
-
-.responsive .sidebar { width: 300px; margin-right: -320px; }
-@media (max-width: 780px) { .responsive .sidebar { width: 100%; margin-right: 0; } }
-
-.responsive-left { padding-left: 320px; }
-@media (max-width: 780px) { .responsive-left { padding-right: 0; } }
-
-.responsive-left .sidebar { width: 300px; margin-left: -320px; }
-@media (max-width: 780px) { .responsive-left .sidebar { width: 100%; margin-right: 0; } }
-
 .full-width { width: 100%; }
 
 .alignleft { float: left; }
@@ -162,8 +146,40 @@ iframe, embed { max-width: 100%; }
 
 .hidden { display: none; }
 
+.bg-facebook { background: #3b5998; }
+
+.bg-twitter { background: #00aced; }
+
+.bg-google { background: #dd4b39; }
+
+.bg-linkedin { background: #0274b3; }
+
+.bg-pinterest { background: #e3262e; }
+
+.color-facebook { color: #3b5998; }
+
+.color-twitter { color: #00aced; }
+
+.color-google { color: #dd4b39; }
+
+.color-linkedin { color: #0274b3; }
+
+.color-pinterest { color: #e3262e; }
+
+.responsive { padding-right: 320px; }
+@media (max-width: 780px) { .responsive { padding-right: 0; } }
+
+.responsive .sidebar { margin-right: -320px; }
+@media (max-width: 780px) { .responsive .sidebar { width: 100%; margin-right: 0; } }
+
+.responsive-left { padding-left: 320px; }
+@media (max-width: 780px) { .responsive-left { padding-left: 0; } }
+
+.responsive-left .sidebar { float: left; margin-left: -320px; }
+@media (max-width: 780px) { .responsive-left .sidebar { width: 100%; margin-left: 0; } }
+
 /* TYPOGRAPHY */
-h1, h2, h3, h4, h5, h6 { margin: 0; margin-bottom: 0.5rem; }
+h1, h2, h3, h4, h5, h6 { margin: 0; margin-bottom: 0.5em; }
 
 h1 { font-size: 180%; }
 
@@ -179,39 +195,40 @@ h6 { font-size: 100%; }
 
 p { margin: 0; margin-bottom: 1em; line-height: 1.5; }
 
-a { color: red; text-decoration: none; transition: all 0.2s; }
+a { color: #e31957; text-decoration: none; transition: all 0.2s; }
 
-hr { border: 0; border-bottom: 1px solid #ddd; }
+hr { margin: 1em 0; border: 0; border-bottom: 1px solid #eee; }
 
 /* GRID */
 .grid { display: flex; flex-flow: row wrap; justify-content: space-between; }
-.grid div[class^="col-"] { margin-bottom: 2%; }
-@media (max-width: 600px) { .grid div[class^="col-"] { margin-bottom: 6%; } }
+.grid div[class^="col-"] { margin: 1.5%; }
+@media (max-width: 600px) { .grid div[class^="col-"] { margin-bottom: 2.5% 1.5%; } }
 .grid .col-1 { flex-basis: 100%; width: 100%; }
-.grid .col-2 { flex-basis: 48%; width: 48%; }
+.grid .col-2 { flex-basis: 47%; width: 47%; }
 @media (max-width: 480px) { .grid .col-2 { flex-basis: 100%; width: 100%; } }
-.grid .col-3 { flex-basis: 31%; width: 31%; }
-@media (max-width: 600px) { .grid .col-3 { flex-basis: 48%; width: 48%; } }
+.grid .col-3 { flex-basis: 30%; width: 30%; }
+@media (max-width: 600px) { .grid .col-3 { flex-basis: 47%; width: 47%; } }
 @media (max-width: 320px) { .grid .col-3 { flex-basis: 100%; width: 100%; } }
-.grid .col-4 { flex-basis: 23%; width: 23%; }
-@media (max-width: 780px) { .grid .col-4 { flex-basis: 48%; width: 48%; } }
+.grid .col-4 { flex-basis: 22%; width: 22%; }
+@media (max-width: 780px) { .grid .col-4 { flex-basis: 47%; width: 47%; } }
 @media (max-width: 480px) { .grid .col-4 { flex-basis: 100%; width: 100%; } }
-.grid .col-5 { flex-basis: 18%; width: 18%; }
-@media (max-width: 600px) { .grid .col-5 { flex-basis: 48%; width: 48%; } }
+.grid .col-5 { flex-basis: 17%; width: 17%; }
+@media (max-width: 600px) { .grid .col-5 { flex-basis: 47%; width: 47%; } }
 @media (max-width: 320px) { .grid .col-5 { flex-basis: 100%; width: 100%; } }
-.grid .col-6 { flex-basis: 14%; width: 14%; }
-@media (max-width: 780px) { .grid .col-6 { flex-basis: 48%; width: 48%; } }
+.grid .col-6 { flex-basis: 13%; width: 13%; }
+@media (max-width: 780px) { .grid .col-6 { flex-basis: 47%; width: 47%; } }
 @media (max-width: 480px) { .grid .col-6 { flex-basis: 100%; width: 100%; } }
 
-/* FORMS */
-form .inline label { display: inline-block; vertical-align: middle; }
-form .inline input, form .inline select, form .inline textarea { display: inline-block; width: auto; }
+/* Forms */
+form .inline { display: table; }
+form .inline label { display: table-cell; vertical-align: middle; }
+form .inline input, form .inline select, form .inline textarea { display: table-cell; width: auto; }
 form fieldset { padding: 0; margin: 0; border: 0; min-width: 0; }
-form legend { display: block; width: 100%; padding-bottom: 0.5em; margin-bottom: 1em; font-size: 120%; border-bottom: 1px solid #ddd; }
+form legend { display: block; width: 100%; padding-bottom: 0.5em; margin: 0.5em 0; font-size: 120%; border-bottom: 1px solid #eee; }
 form label { display: block; padding-right: 0.5em; margin-bottom: 0.5em; }
-form input, form select, form textarea { display: block; width: 100%; padding: 0.5em; height: 35px; background: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.05); }
-form input:focus, form select:focus, form textarea:focus { background: #f8f8f8; outline: 0; }
-form input[disabled], form select[disabled], form textarea[disabled] { background-color: #ddd; opacity: 1; cursor: not-allowed; }
+form input, form select, form textarea { display: block; width: 100%; padding: 0.5em; height: 35px; color: #333; background: #fff; border: 1px solid #eee; border-radius: 4px; box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.05); }
+form input:focus, form select:focus, form textarea:focus { outline: 0; }
+form input[disabled], form select[disabled], form textarea[disabled] { background-color: #eee; opacity: 1; cursor: not-allowed; }
 form input[type="radio"], form input[type="checkbox"] { display: inline-block; vertical-align: top; width: auto; height: auto; margin-right: 0.25em; }
 form input[type="file"] { display: inline-block; width: auto; padding-left: 0; background: transparent; box-shadow: none; border: 0; }
 form input[type="submit"] { display: inline-block; width: auto; }
@@ -227,24 +244,25 @@ form input.danger ~ .text-alert:after { border-color: transparent transparent #d
 form select[multiple] { height: auto; }
 form textarea { height: auto; }
 form .input-helper { display: inline-table; width: 100%; }
-form .input-helper span { display: table-cell; vertical-align: middle; width: 1%; height: 35px; padding: 0.5em 1em; font-size: 80%; color: #555; background: #eee; border: 1px solid #ddd; }
+form .input-helper span { display: table-cell; vertical-align: middle; width: 1%; height: 35px; padding: 0.5em 1em; font-size: 80%; color: #555; background: #eee; border: 1px solid #eee; }
 form .input-helper span:first-child { border-right: 0; border-radius: 4px 0 0 4px; }
 form .input-helper input { display: table-cell; border-radius: 0 4px 4px 0; }
+form .text-helper { color: #555; font-size: 90%; }
 form .text-alert { position: relative; color: #555; padding: 0.5em; margin: 12px 0 0; background: #f1f1f1; border-radius: 4px; }
 form .text-alert:after { content: ''; position: absolute; top: -10px; left: 10px; width: 0; height: 0; border-style: solid; border-width: 0 10px 10px 10px; border-color: transparent transparent #f1f1f1 transparent; }
 
 /* TABLES */
 table { width: 100%; max-width: 100%; margin-bottom: 1em; }
-table thead { border-bottom: 2px solid #ddd; text-align: center; font-weight: bold; }
+table thead { border-bottom: 2px solid #eee; text-align: center; font-weight: bold; }
 table td, table th { padding: 0.5em; }
 table tr:nth-child(even) { background: rgba(0, 0, 0, 0.075); }
 table.small td, table.small th { padding: 0.4em; }
 
-/* BUTTONS */
-.btn { display: inline-block; padding: 0.5em; color: rgba(0, 0, 0, 0.75); text-decoration: none; background: #ddd; border: 0; border-radius: 4px; }
-.btn.hollow { box-shadow: 0 0 2px #ddd; background: #fff; color: #ddd; }
-.btn-primary { background: red; color: #fff; }
-.btn-primary.hollow { box-shadow: 0 0 0 1px red inset; background: #fff; color: red; }
+/* Buttons */
+.btn { display: inline-block; padding: 0.5em; color: rgba(0, 0, 0, 0.75); text-decoration: none; background: #eee; border: 0; border-radius: 4px; }
+.btn.hollow { box-shadow: 0 0 2px #eee; background: #fff; color: #eee; }
+.btn-primary { background: #e31957; color: #fff; }
+.btn-primary.hollow { box-shadow: 0 0 0 1px #e31957 inset; background: #fff; color: #e31957; }
 .btn-submit { background: #2199e8; color: #fff; }
 .btn-submit.hollow { box-shadow: 0 0 0 1px #2199e8 inset; background: #fff; color: #2199e8; }
 .btn-success { background: #5cb85c; color: #fff; }
@@ -255,10 +273,10 @@ table.small td, table.small th { padding: 0.4em; }
 .btn-danger.hollow { box-shadow: 0 0 0 1px #d9534f inset; background: #fff; color: #d9534f; }
 
 /* ALERTS */
-.alert { display: block; padding: 0.5em; color: rgba(0, 0, 0, 0.75); background: #ddd; border-radius: 4px; }
-.alert.hollow { box-shadow: 0 0 2px #ddd; background: #fff; color: #ddd; }
-.alert-primary { background: red; color: #fff; }
-.alert-primary.hollow { box-shadow: 0 0 0 1px red inset; background: #fff; color: red; }
+.alert { display: block; padding: 0.5em; color: rgba(0, 0, 0, 0.75); background: #eee; border-radius: 4px; }
+.alert.hollow { box-shadow: 0 0 2px #eee; background: #fff; color: #eee; }
+.alert-primary { background: #e31957; color: #fff; }
+.alert-primary.hollow { box-shadow: 0 0 0 1px #e31957 inset; background: #fff; color: #e31957; }
 .alert-success { background: #5cb85c; color: #fff; }
 .alert-success.hollow { box-shadow: 0 0 0 1px #5cb85c inset; background: #fff; color: #5cb85c; }
 .alert-warning { background: #f0ad4e; color: #fff; }
@@ -268,4 +286,4 @@ table.small td, table.small th { padding: 0.4em; }
 
 /* Adicionales */
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=framework.css.map */

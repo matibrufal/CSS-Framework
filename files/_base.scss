@@ -15,35 +15,6 @@ embed {
 	max-width: 100%;
 }
 
-.responsive {
-	padding-right:320px;
-	@media (max-width:780px) {
-		padding-right:0;
-	}
-}
-.responsive .sidebar {
-	width:300px;
-	margin-right: -320px;
-	@media (max-width:780px) {
-		width: 100%;
-		margin-right: 0;
-	}
-}
-.responsive-left {
-	padding-left:320px;
-	@media (max-width:780px) {
-		padding-right:0;
-	}
-}
-.responsive-left .sidebar {
-	width:300px;
-	margin-left: -320px;
-	@media (max-width:780px) {
-		width: 100%;
-		margin-right: 0;
-	}
-}
-
 .full-width {
 	width: 100%;
 }
@@ -73,4 +44,48 @@ embed {
 
 .hidden {
 	display: none;
+}
+
+// Social Media Colors
+
+.bg-facebook { background:#3b5998; }
+.bg-twitter { background:#00aced; }
+.bg-google { background:#dd4b39; }
+.bg-linkedin { background:#0274b3; }
+.bg-pinterest { background:#e3262e; }
+
+.color-facebook { color:#3b5998; }
+.color-twitter { color:#00aced; }
+.color-google { color:#dd4b39; }
+.color-linkedin { color:#0274b3; }
+.color-pinterest { color:#e3262e; }
+
+// Responsive
+
+.responsive {
+	padding-right:320px;
+	@media (max-width:780px) {
+		padding-right:0;
+	}
+}
+.responsive .sidebar {
+	margin-right: -320px;
+	@media (max-width:780px) {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+.responsive-left {
+	padding-left:320px;
+	@media (max-width:780px) {
+		padding-left:0;
+	}
+}
+.responsive-left .sidebar {
+	float: left;
+	margin-left: -320px;
+	@media (max-width:780px) {
+		width: 100%;
+		margin-left: 0;
+	}
 }

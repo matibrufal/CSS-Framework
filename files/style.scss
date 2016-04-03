@@ -9,26 +9,13 @@ $border-radius: 4px;
 
 // Colors Variables
 
-$primary: red;
-$gray: #ddd;
+$primary: #e31957; // cambiar por el preferido
+$gray: #eee;
 $submit: #2199e8;
+
 $success: #5cb85c;
 $warning: #f0ad4e;
 $danger: #d9534f;
-
-body {
-	color:#353535;
-	font-size:16px;
-	line-height:1.5;
-}
-
-section {
-	margin-bottom:2.5px;
-	overflow:hidden;
-	padding:0.5em;
-	border-bottom:1px solid #ccc;
-}
-
 
 // Reset
 @import "normalize";
@@ -42,9 +29,6 @@ section {
 @import "buttons";
 
 /* Adicionales */
-
-// Feed
-@import "feed";
 
 // Woocommerce
 @import "woocommerce"
