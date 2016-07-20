@@ -8,70 +8,61 @@
 	div[class^="col-"] {
 		margin:1.5%;
 		@media (max-width: 600px) {
-			margin-bottom: 2.5% 1.5%;
+			margin: 2.5% 1.5%;
 		}
 	}
 
 	.col-1 {
-		flex-basis: 100%;
-		width: 100%;
+		width: 97%;
 	}
 	.col-2 {
-		flex-basis: 47%;
+
 		width: 47%;
 		@media (max-width: 480px) {
-			flex-basis: 100%;
-			width: 100%;
+			width: 97%;
 		}
 	}
 	.col-3 {
-		flex-basis: 30%;
+
 		width: 30%;
 		@media (max-width: 600px) {
-			flex-basis: 47%;
 			width: 47%;
 		}
 		@media (max-width: 320px) {
-			flex-basis: 100%;
-			width: 100%;
+			width: 97%;
 		}
 	}
 	.col-4 {
-		flex-basis: 22%;
+
 		width: 22%;
 
 		@media (max-width: 780px) {
-			flex-basis: 47%;
+
 			width: 47%;
 		}
 		@media (max-width: 480px) {
-			flex-basis: 100%;
-			width: 100%;
+			width: 97%;
 		}
 	}
 	.col-5 {
-		flex-basis: 17%;
+
 		width: 17%;
 		@media (max-width: 600px) {
-			flex-basis: 47%;
 			width: 47%;
 		}
 		@media (max-width: 320px) {
-			flex-basis: 100%;
-			width: 100%;
+			width: 97%;
 		}
 	}
 	.col-6 {
-		flex-basis: 13%;
+
 		width: 13%;
 
 		@media (max-width: 780px) {
-			flex-basis: 47%;
 			width: 47%;
 		}
 		@media (max-width: 480px) {
-			flex-basis: 100%;
-			width: 100%;
+			width: 97%;
 		}
 	}
 }
